@@ -64,7 +64,7 @@ public class controller {
 			
 			if(!agreement)
 			{
-				System.out.println("agreement not accepted ");
+		
 				throw new Exception("agreement not accepted");
 			}
 			
@@ -81,8 +81,7 @@ public class controller {
 			user.setPassword(passwordEncoder.encode(user.getPassword()));
 			
 			
-			System.out.println("agreement "+agreement);
-			System.out.println("user"+user);
+			
 			
 			User result1= userrepository.save(user);
 			
